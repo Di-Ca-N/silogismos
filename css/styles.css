@@ -1,0 +1,15 @@
+span {
+	display: block;
+}
+
+.figure {
+	font-size: 2em;
+}
+
+.prem span {
+	font-size: 1.25em;
+}
+
+label[for="figure"]{
+	font-size: 1.25em;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Silogismos</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script 
+		src="https://code.jquery.com/jquery-3.4.1.min.js" 
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</head>
+<body class="green">
+	<header class="center white-text">
+		<h1>Silogismos</h1>
+	</header>
+	<main class="container white z-depth-2 row section">
+		<div class="col s12 l9 center">
+			<form>
+				<div class="row">
+					<div class="range-field col s12 l8 offset-l2">
+						<label for="figure">Figura: 1</label>
+						<input type="range" min="1" max="4" value="1" id="figure">
+					</div>
+				</div>
+
+				<div class="prem valign-wrapper">
+					<div class="input-field col s12 m6">
+						<select name="q1" id="q1">
+							<option value="A">Todo</option>
+							<option value="E">Nenhum</option>
+							<option value="I">Algum</option>
+							<option value="O">Algum não</option>
+						</select>
+						<label for="q1">Quantificador 1</label>
+					</div>
+					<div class="col s12 m6">
+						<span id="p1">Todo M é P</span>
+					</div>
+				</div>
+
+				<div class="prem valign-wrapper">
+					<div class="input-field col s12 m6">
+						<select name="q2" id="q2">
+							<option value="A">Todo</option>
+							<option value="E">Nenhum</option>
+							<option value="I">Algum</option>
+							<option value="O">Algum não</option>
+						</select>
+						<label for="q2">Quantificador 2</label>
+					</div>
+					<div class="col s12 m6">
+						<span id="p2">Todo S é M</span>
+					</div>
+				</div>
+				<div>
+					<button class="btn btn-large green darken-2 waves-effect waves-light" type="submit">Testar Silogismo</button>
+				</div>
+				
+				
+			</form>
+		</div>
+		<div class="col s12 l3 center">
+			<h3>Figura</h3>
+			<div class="figure col s6 offset-s3 center">
+				<span class="first arg">MP</span>
+				<span class="second arg">SM</span>
+				<div class="divider"></div>
+				<span class="conclusion">SP</span>
+			</div>
+			
+		</div>
+	</main>
+	<script src="js/classes.js"></script>
+	<script src="js/engine.js"></script>
+	<script src="js/teste.js"></script>
+</body>
+</html>
